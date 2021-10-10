@@ -1,4 +1,4 @@
-import { CardComponent } from "./ContentComponent";
+import { CardComponent } from "./Card";
 import { card3, card2, card1 } from "../Picture";
 const datas = [
   {
@@ -34,4 +34,4 @@ const CardsComponent = () => {
   );
 };
 
-export default CardsComponent;
+export { CardsComponent };

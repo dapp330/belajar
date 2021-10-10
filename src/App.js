@@ -2,30 +2,26 @@ import React from "react";
 import "./App.css";
 import "antd/dist/antd.css";
 import { Layout } from "antd";
-import NavbarComponent from "./components/NavbarComponent";
-import {
-  CarouselComponent,
-  AvatarComponent,
-  CardComponent,
-} from "./components/ContentComponent";
-import CardsComponent from "./components/CardsComponent";
+// import NavbarComponent from "./components/NavbarComponent";
+import { CarouselComponent } from "./components/ContentComponent";
+import { AvatarsComponent } from "./components/AvatarsComponent";
+import { CardsComponent } from "./components/CardsComponent";
 import "tachyons/css/tachyons.min.css";
+import { NavComponent } from "./components/NavComponent";
 
 const { Header, Footer, Content } = Layout;
 
 function App() {
   return (
     <div className="App">
-      <Layout style={{ flexDirection: "Column" }}>
-        <Header style={{ padding: 0 }}>
-          <NavbarComponent />
-        </Header>
+      <Layout style={{ flexDirection: "Column" }} className={"bg-navy"}>
+        <div style={{ padding: 0 }}>
+          <NavComponent />
+        </div>
         <Content>
-          <CarouselComponent />
+          */}
           <br />
-          <AvatarComponent />
-          <br />
-          <br />
+          <AvatarsComponent additionalClassname={"mb3 tc pa4 flex flex-wrap"} />
           <CardsComponent />
         </Content>
         <Footer></Footer>
